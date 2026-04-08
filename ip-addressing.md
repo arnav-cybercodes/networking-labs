@@ -10,4 +10,10 @@
 - NID identifies the specific network.
 - HID identifies a specific device on that network.  
 - Now these IP Addresses are divided into Classes namely A,B,C,D,E
--  where Class A use first 8 bits(octet) as NID and 24 bits for Host IDs.  
+- where Class A use first 8 bits(octet) as NID and 24 bits for Host IDs.  
+- Class B uses 16 bits as NID and rest 16 bits for Host IDs.
+- Class C contains 24 bits of Network ID and rest as HID, and similarly so on.
+- Example: 192.168.1.1 It is of Class C so 192.168.1 are NIDs and .1 is HID.
+
+  
+  
