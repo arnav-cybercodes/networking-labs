@@ -15,5 +15,61 @@
 - Class C contains 24 bits of Network ID and rest as HID, and similarly so on.
 - Example: 192.168.1.1 It is of Class C so 192.168.1 are NIDs and .1 is HID.
 
+## 🌐 Network Identification
+
+A network communication system is identified using three main components:
+
+- **Network** → Identified using **IP Address (Logical Address)**
+- **Host** → Identified using **MAC Address (Physical Address)**
+- **Process** → Identified using **Port Number**
+
+---
+
+## 🔌 Common Port Numbers
+
+| Protocol | Port Number |
+|----------|------------|
+| SMTP (Simple Mail Transfer Protocol) | 25 |
+| DNS (Domain Name System) | 53 |
+| HTTP | 80 |
+| HTTPS | 443 |
+| FTP | 20, 21 |
+| POP3 | 110 |
+| IMAP | 143 |
+
+---
+
+## 🔁 Types of Communication
+
+| Type | Meaning | Example |
+|------|--------|--------|
+| **Unicast (1:1)** | One sender → One receiver | Sending message to a friend |
+| **Broadcast (1:All)** | One sender → All devices in network | ARP request |
+| **Multicast (1:Many)** | One sender → Selected group | Live streaming |
+
+### 📡 Types of Broadcast
+
+- **Limited Broadcast Address (LBA)** → `255.255.255.255`  
+  👉 All bits of IP address are **1**  
+  👉 Reaches all devices in the local network only  
+
+- **Directed Broadcast Address (DBA)** → Network-specific broadcast  
+  👉 Formed by making **all Host ID bits = 1**  
+  👉 Example: `192.168.1.255`  
+
+💡 **Tip:**
+- Limited Broadcast = Full IP is all 1s (`255.255.255.255`)  
+- Directed Broadcast = Only **Host part is all 1s**, Network part remains same  
+
+---
+
+## 🎭 Network Mask (Subnet Mask)
+
+- Used to separate **Network ID (NID)** and **Host ID (HID)**
+- Represented like: `255.255.255.0`
+
+👉 Helps in:
+- Identifying network portion  
+- Identifying host portion
   
   
