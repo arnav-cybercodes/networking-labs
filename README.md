@@ -2,7 +2,7 @@
 ---
 Learning networking concepts for cybersecurity 
 
-## Topics Covered already:
+## Topics Covered :
 - Topology 
 - Protocols
 - IP Addressing
