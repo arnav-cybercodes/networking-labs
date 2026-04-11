@@ -88,4 +88,7 @@ A good network must satisfy:
 - All devices connected to a central hub/switch
 
 ### 📌 Diagram:
-![Topology Diagrams]("https://github.com/user-attachments/assets/e24e8627-e4cb-4bc2-9cbb-21df62bdc5af")
+![Topology Diagrams](https://github.com/user-attachments/assets/e24e8627-e4cb-4bc2-9cbb-21df62bdc5af)
+
+
+
