@@ -5,6 +5,20 @@
 - ![IPv4 Example](https://github.com/user-attachments/assets/45f9ceaf-dc07-4218-a3c4-3834e43d1d8b)
   Here, middle box contains IP Addresses in Octet format while right boc contains addresses in Binary format.
 
+## 🌍 Types of IP Address
+
+- **Private IP Address**
+  👉 Used inside local networks
+  👉 Not accessible from internet
+  👉 Example ranges:
+  - 192.168.x.x
+  - 10.x.x.x
+  - 172.16.x.x – 172.31.x.x
+
+- **Public IP Address**
+  👉 Assigned by ISP
+  👉 Used to communicate over internet
+  
 # 🧠Breakdown of IPv4:
 - It consists of two parts:NID(Network ID) and HID(Host ID).
 - NID identifies the specific network.
@@ -13,8 +27,19 @@
 - where Class A use first 8 bits(octet) as NID and 24 bits for Host IDs.  
 - Class B uses 16 bits as NID and rest 16 bits for Host IDs.
 - Class C contains 24 bits of Network ID and rest as HID, and similarly so on.
-- Example: 192.168.1.1 It is of Class C so 192.168.1 are NIDs and .1 is HID.
+- Example:192.168.1 → Network ID  
+.1 → Host ID
 
+- **Loopback Address**
+  👉 127.0.0.1
+  👉 Used to test your own system (localhost)
+
+  ## 🚪 Default Gateway
+
+- It is the router that connects your network to other networks
+- Example: 192.168.1.1
+- Used when sending data outside your network
+  
 ## 🌐 Network Identification
 
 A network communication system is identified using three main components:
@@ -24,6 +49,7 @@ A network communication system is identified using three main components:
 - **Process** → Identified using **Port Number**
 
 ---
+💡 Note: MAC Address works at Data Link Layer while IP Address works at Network Layer (OSI Model)
 
 ## 🔌 Common Port Numbers
 
@@ -72,4 +98,7 @@ A network communication system is identified using three main components:
 - Identifying network portion  
 - Identifying host portion
   
-  
+ ## 🔀 Subnetting (Intro)
+
+- Process of dividing a network into smaller networks
+- Helps in better management and security
