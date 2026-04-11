@@ -138,6 +138,8 @@ Hosts = 2⁵ - 2 = 30
 | 3      | 10     | 128 – 191   |
 | 4      | 11     | 192 – 255   |
 
----
+## 🥧 Subnet Division (Visual)
 
-## 🧮 Bit Weight Understanding
+![Subnet Division](https://github.com/user-attachments/assets/163c263d-8886-4a92-8c5d-000865285997)
+
+Each slice represents one subnet of size 64 IP addresses.
