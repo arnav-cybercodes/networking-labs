@@ -187,7 +187,7 @@ Data → Append zeros → Divide → CRC → Send (Data + CRC)
 Received → Divide → Check remainder → Accept / Reject
 
 ---
-[error-control](<https://github.com/user-attachments/assets/f44f3277-2bb5-4928-bba7-bfa59b23e082 />)
+[error-control](https://github.com/user-attachments/assets/f44f3277-2bb5-4928-bba7-bfa59b23e082)
 
 
 # 🔢 Polynomial Representation
