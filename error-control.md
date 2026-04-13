@@ -89,6 +89,7 @@ Total number of 1s = **odd**
 - 4-bit errors → sometimes undetected
 
 ---
+![Parity](https://github.com/user-attachments/assets/ff1d09a8-fa97-47c2-b36b-c9c466d575c1)
 
 ## 3. Checksum
 
