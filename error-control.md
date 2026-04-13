@@ -222,3 +222,45 @@ Where:
 # ✅ Final Conclusion
 
 CRC is a **powerful and reliable error detection technique** that ensures data integrity during transmission.
+
+# Error Correction
+
+## 🔹 Hamming Code
+
+- Used for **error correction**
+- Can:
+  - Detect up to **2-bit errors**
+  - Correct **1-bit error**
+
+---
+
+# Hamming Distance
+
+Defined as:
+👉 Minimum number of bit changes required to convert one codeword to another
+
+If:Hamming Distance = d
+
+Then:
+- Detect up to → (d - 1) bit errors
+
+---
+
+# Summary 🧠
+
+| Technique | Detect | Correct |
+|----------|--------|--------|
+| Parity | Single bit | ❌ |
+| 2D Parity | Single + some multi-bit | ✅ (1-bit) |
+| Checksum | Good | ❌ |
+| CRC | Very strong | ❌ |
+| Hamming Code | Yes | ✅ (1-bit) |
+
+---
+
+# Key Takeaways 🚀
+
+- Errors are unavoidable in transmission
+- Redundant bits help detect errors
+- CRC is widely used in real systems
+- Hamming code helps in correction
