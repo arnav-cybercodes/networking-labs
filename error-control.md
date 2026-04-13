@@ -1,6 +1,7 @@
 # Error Control 🚀
 
 Error control ensures that data transmitted over a network is **accurate and reliable**.
+"In Cybersecurity, error control is the foundation of the Integrity pillar of the CIA Triad. Without CRC, we couldn't distinguish between a random bit-flip and a malicious packet injection."
 
 It is divided into two main processes:
 
@@ -186,6 +187,8 @@ Data → Append zeros → Divide → CRC → Send (Data + CRC)
 Received → Divide → Check remainder → Accept / Reject
 
 ---
+[error-control](<https://github.com/user-attachments/assets/f44f3277-2bb5-4928-bba7-bfa59b23e082 />)
+
 
 # 🔢 Polynomial Representation
 
