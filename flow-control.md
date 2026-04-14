@@ -133,13 +133,56 @@ So, sender sends one frame and then waits until the sent frame gets acknowledged
 After receiving the acknowledgement from the receiver, sender sends the next frame.
 ![stopwait](https://github.com/user-attachments/assets/18481877-447f-470b-9730-7f159567b33f)
 
- ![stop-wait](https://github.com/user-attachments/assets/5acbbcc3-15b1-483f-a842-f1efdea94ef9)
+ ![stop-wait](https://github.com/user-attachments/assets/1272094b-dc72-4b54-adc7-3deb727afe4e)
 
-Here,
+Total time taken to send one packet,
 
-Sender uses Tt time for transmitting the packet over the link.
-Then, sender waits for 2 x Tp time.
-After 2 x Tp time, sender receives the acknowledgement for the sent frame from the receiver.
-Then, sender sends the next frame.
-This 2 x Tp waiting time is the actual cause of less efficiency.
- 
+= Tt(data) + Tp(data) + Tq + Tpro + Tt(ack) + Tp(ack)
+
+Since,
+Tp(ack) = Tp(data)
+
+And,
+Tt(ack) << Tt(data).
+
+So we can neglect Tt(ack)
+Tq = 0 and Tpro = 0
+
+Hence, 
+Total time = Tt(data) + 2 * Tp 
+Where,
+
+Tt(data) : Transmission delay for Data packet
+Tp(data) : propagation delay for Data packet
+Tq: Queuing delay
+Tpro: Processing delay
+Tt(ack): Transmission delay for acknowledgment
+Tp(ack) : Propagation delay for acknowledgment 
+We know that the Efficiency (η),
+
+= Useful time / Total cycle time.
+= Tt / (Tt + 2*Tp)
+= 1 / (1+2*(Tp/Tt))
+= 1 / (1+2*a) 
+
+where, 
+a = Tp / Tt 
+
+
+**Throughput**: Number of bits send per second, which is also known as Effective Bandwidth or Bandwidth utilization.
+
+Throughput=Length of frame/Total Cycle time
+
+=L/(Tt(data) + Tp(data) + Tq + Tpro + Tt(ack) + Tp(ack))                        ---1
+
+=(L/BW)*BW)/(Tt(data) + Tp(data) + Tq + Tpro + Tt(ack) + Tp(ack))     
+
+=Tt(data)*BW/(Tt(data) + Tp(data) + Tq + Tpro + Tt(ack) + Tp(ack))
+
+=   η*BW                                                                                                         --2      
+
+we know that Tt(data)=L/BW
+
+where Tt(data)=Transmission Delay
+
+BW=Band Width
